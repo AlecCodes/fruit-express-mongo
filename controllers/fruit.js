@@ -1,7 +1,6 @@
 const express = require('express') // bring this in so we can make our router
 const Fruit = require('../models/fruit')
 
-
 /////
 // Create Router  variable to attach rooutes
 /////

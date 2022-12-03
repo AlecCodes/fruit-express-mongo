@@ -1,3 +1,5 @@
+//YOOO LOL
+
 require("dotenv").config()  // Load env variables
 const express = require('express') // bring in express to make our app
 const morgan = require('morgan') // nice logger for our request
