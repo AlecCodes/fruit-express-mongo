@@ -7,12 +7,12 @@ mongoose.connection.on('open', () => {
 
     // define data we want to put in the database
     const startingFruits =  [
-        { name: "Orange", color: "orange", readyToEat: false, date: 1 },
-        { name: "Grape", color: "purple", readyToEat: false, date: 3 },
-        { name: "Banana", color: "orange", readyToEat: false, date: 4 },
-        { name: "Strawberry", color: "red", readyToEat: false, date: 33},
-        { name: "Coconut", color: "brown", readyToEat: true, date: 4 },
-        { name: "Cherry", color: "red", readyToEat: true, date: 9},
+      { name: "Orange", color: "orange", readyToEat: false, date: 1, dates:[13, 2, 2, 3, 1]},
+      { name: "Grape", color: "purple", readyToEat: false, date: 3,dates:[13, 2, 2, 3, 1]},
+      { name: "Banana", color: "orange", readyToEat: false, date: 4, dates:[13, 2, 2, 3, 1]},
+      { name: "Strawberry", color: "red", readyToEat: false, date: 33, dates:[13, 2, 2, 3, 1]},
+      { name: "Coconut", color: "brown", readyToEat: true, date: 4, dates:[13, 2, 2, 3, 1]},
+      { name: "Cherry", color: "red", readyToEat: true, date: 9, dates:[13, 2, 2, 3, 1]},
       ]
       
       // Delete all fruits
@@ -23,7 +23,6 @@ mongoose.connection.on('open', () => {
             console.log(data)
             
         })
-
       })
       
 })

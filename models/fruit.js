@@ -14,8 +14,23 @@ const fruitsSchema = new  Schema({
     color: String,
     readyToEat: Boolean,
     date: Number,
-    dates: [{date: Number}]
+    dates: [Number],
 })
+
+
+fruitsSchema.methods.sorter = function(){
+    this.dates.sort((a,b)=>{
+        if (a>b){
+            return -1
+        } if (a<b){
+            return 1
+        } else {
+            return 0
+        }
+    })
+    console.log(this.dates)
+}
+
 
 const Fruit = model('Fruit', fruitsSchema)
 
